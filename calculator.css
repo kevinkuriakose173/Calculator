@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Inconsolata';
+}
+button {
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(60, 60, 60);
+}
+.everything {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.calculator {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+}
+.display {
+    width: 100%;
+    height: 75px;
+    margin-bottom: -2px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+.display p {
+    font-size: 40px;
+    padding: 5px;
+}
+.numbers-and-functions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 87.5%;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+.rows {
+    display: grid;
+    width: 100%;
+    height: 80%;
+    background-color: red;
+    grid-template-columns: repeat(4, 1fr);
+}
+.clear-row {
+    width: 100%;
+    height: 80%;
+    background-color: greenyellow;
+}
+.clear-row button {
+    width: 100%;
+    height: 100%;
+}
